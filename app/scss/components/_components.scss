@@ -1,0 +1,86 @@
+/* ==========================================================================
+   Components
+
+   Never add styles directly to this file - set up imports
+   ========================================================================== */
+
+
+/* Blocks
+   ========================================================================== */
+//@import "blocks/article-main-layout";
+
+
+/* Structures
+   ========================================================================== */
+
+//@import "structures/cookie-consent";
+
+
+
+/* Header
+   ========================================================================== */
+@import "header/jumbotron",
+        "header/navbar",
+        "header/header-icon",
+        "header/titles";
+
+
+/* Buttons
+   ========================================================================== */
+@import "buttons/buttons";
+
+
+/* Footer
+   ========================================================================== */
+@import "footer/footer";
+
+
+ //Forms
+ //  ==========================================================================
+@import "text/text";
+
+
+/* Pageparts
+   ========================================================================== */
+@import "pageparts/backgrounds",
+        "pageparts/containers",
+        "pageparts/svg",
+        "pageparts/dots",
+        "pageparts/borders";
+
+
+
+/* Links
+   ========================================================================== */
+@import "links/links";
+
+
+/* Blocks
+   ========================================================================== */
+@import "blocks/item-work",
+        "blocks/wrap-item",
+        "blocks/nav-tabs-sa",
+        "blocks/container-connecting",
+        "blocks/feature-item",
+        "blocks/feature-item-block",
+        "blocks/container-work",
+        "blocks/work-textbox",
+        "blocks/wrap_title-text-btn",
+        "blocks/container-analyze",
+        "blocks/container-text",
+        "blocks/container-contact",
+        "blocks/forms",
+        "blocks/container-social-analyze",
+        "blocks/container-demo",
+        "blocks/wrap-horizontal-icons",
+        "blocks/container-help",
+        "blocks/list",
+        "blocks/hr",
+        "blocks/radio",
+        "blocks/container-pricing";
+
+
+/* Vendors
+   ========================================================================== */
+
+@import "../../../bower_components/slick-carousel/slick/slick.scss";

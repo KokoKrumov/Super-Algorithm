@@ -1,0 +1,12 @@
+.section-feature_item:nth-child(even) {
+    .feature-block {
+      flex-direction: row-reverse;
+  }
+
+  .feature-block_text-content {
+    padding-left: 0;
+    @include bp-min-768 {
+      padding-right: 60px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "socialanalyzer.eu",
+  "authors": [
+    "kaloyan.krumov <k.krumov@vm5.eu>"
+  ],
+  "description": "socialanalyzer.eu",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "bootstrap-sass-official#^3.3.7",
+    "slick-carousel": "^1.8.1",
+    "jquery": "^3.2.1",
+    "photoswipe": "^4.1.2",
+    "aos": "^2.2.0",
+    "matchHeight": "matchheight#^0.7.2"
+  }
+}

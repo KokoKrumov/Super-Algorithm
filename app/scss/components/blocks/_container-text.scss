@@ -1,0 +1,40 @@
+.container-text {
+  .text-wrap-items {
+    @extend .flex;
+    @extend .flex-wrap;
+    margin-top: 115px;
+    margin-bottom: 65px;
+  }
+
+  .faq_text-wrap-items {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .text-wrap-item {
+    padding-bottom: 50px;
+  }
+
+  .heading {
+    padding-bottom: 20px;
+    display: inline-block;
+  }
+
+  .wrap-item_text {
+    @include font-size(14px);
+  }
+
+  .list-ol__li {
+    margin-bottom: 35px;
+  }
+
+  .list-ol__li--main::before {
+    @extend .heading;
+    @extend .heading--md;
+  }
+
+  .list-ol__li--secondary::before {
+    @extend .text;
+    display: inline;
+  }
+}

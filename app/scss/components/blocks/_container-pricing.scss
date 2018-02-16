@@ -1,0 +1,158 @@
+.container-pricing {
+  margin-top: 30px;
+
+  .wrap-price-item {
+    margin-bottom: 30px;
+  }
+
+  .price-item {
+    border: 1px solid #f2f2f2;
+    border-radius: 10px;
+  }
+
+  .wrap-type {
+    background-color: $color-009cc6;
+    padding: 25px 0 15px 0;
+    text-align: center;
+  }
+
+  .pricing-type {
+    color: $color-ffffff;
+    font-family: "robotolight", sans-serif;
+    @include font-size(22px);
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .pricing-price {
+    color: $color-ffffff;
+    font-family: "robotobold", sans-serif;
+    @include font-size(44px);
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: lowercase;
+
+    &__period {
+      font-family: "robotolight", sans-serif;
+      @include font-size(22px);
+    }
+  }
+
+  .btn {
+    margin: 0 auto;
+    display: inline-block;
+  }
+
+  .btn-primary {
+    border-color: $color-ffffff;
+
+    &:hover {
+      border-color: $color-009cc6;
+    }
+  }
+
+  .wrap-about {
+    background-color: #edfafd;
+    padding: 15px 0;
+
+    &__text {
+      text-align: center;
+      color: #3c4344;
+      font-family: "robotolight", sans-serif;
+      @include font-size(16px);
+    }
+  }
+
+  .wrap-details {
+    ul {
+      padding: 20px;
+    }
+
+    .list-space-row li {
+      margin: 20px 0;
+    }
+
+    .imoon {
+      @include font-size(16px);
+    }
+
+    hr {
+      margin: 0 20px;
+    }
+  }
+
+  .wrap-link {
+    background-color: $color-009cc6;
+
+    &:hover {
+      background-color: $color-012f61;
+    }
+
+    &__text {
+      color: $color-ffffff;
+      font-family: "robotobold", sans-serif;
+      @include font-size(16px);
+      text-transform: uppercase;
+      text-align: center;
+      display: block;
+      padding: 20px 0;
+    }
+  }
+}
+
+.badge-text {
+  text-align: center;
+  font-family: "robotobold", sans-serif;
+  @include font-size(14px);
+  text-transform: uppercase;
+  color: #324a5e;
+  background-color: $color-warning;
+  padding-top: 15px;
+
+  &:after {
+    content: " ";
+    width: 90%;
+    height: 1px;
+    background-color: #fcbb68;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+}
+
+.container-pricing * .active {
+  &.price-item {
+    -webkit-box-shadow: 0 9px 20px 0 #e3eff2;
+    box-shadow: 0 9px 20px 0 #e3eff2;
+  }
+
+  .wrap-type, .wrap-link {
+    background-color: $color-warning;
+  }
+
+  .wrap-link:hover {
+    background-color: $color-012f61;
+  }
+
+  .badge-text {
+    visibility: visible;
+  }
+
+  .btn-primary {
+    background-color: $color-warning;
+
+    &:hover {
+      background-color: $color-012f61;
+      border-color: $color-012f61;
+    }
+  }
+}
+
+.container-pricing * .inactive {
+  margin-top: 45px;
+
+  @include bp-max-767 {
+    margin-top: 0;
+  }
+}

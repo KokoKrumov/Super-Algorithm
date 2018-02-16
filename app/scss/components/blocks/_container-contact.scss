@@ -1,0 +1,30 @@
+.container-contact {
+  @extend .container-features;
+  background-image: url(/app/images/backgrounds/contact-bg.png);
+  background-size: cover;
+  position: relative;
+  padding-top: 50px;
+
+  .arrow-up {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid $color-ffffff;
+  }
+
+  .wrap-item_title {
+    @extend .text-center;
+    margin-bottom: 30px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-btn {
+    @extend .text-center;
+  }
+}

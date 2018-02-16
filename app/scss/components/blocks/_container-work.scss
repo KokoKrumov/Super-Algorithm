@@ -1,0 +1,7 @@
+.container-work {
+  padding: 70px 0;
+}
+.container-work-features {
+  @extend .container-features;
+  padding-bottom: 0;
+}

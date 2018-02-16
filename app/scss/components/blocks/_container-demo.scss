@@ -1,0 +1,41 @@
+.container-demo {
+  @extend .container-social-analyze;
+  @extend .demo-page-bottom-bg;
+  padding-bottom: 300px;
+  @include bp-max-991 {
+    padding-bottom: 160px;
+  }
+}
+
+.form-demo-page_panel {
+    margin-top: 70px;
+}
+
+.form-demo-page {
+  padding: 30px;
+  margin: 10px;
+  background-color: $color-edfafd;
+  border-radius: 3px;
+  border: 3px solid $color-009cc6;
+
+  .form-group {
+    margin-bottom: 30px;
+  }
+}
+.terms-conditions {
+  width: 100%;
+  margin: 15px 0;
+  color: #6d6d6d;
+  display: inline-block;
+}
+.terms-conditions-link {
+  @extend .link;
+  font-family: 'robotobold';
+  text-transform: none;
+  color: $color-009cc6;
+}
+.item-demo_text {
+  text-align: center;
+  @include font-size(14px);
+  color: $color-6d6d6d;
+}

@@ -1,0 +1,126 @@
+.content-jumbo-page {
+    height: auto;
+}
+
+.login-holder {
+    margin-bottom: 60px;
+    margin-top: 50px;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: rgba(237, 250, 253, 0.25);
+}
+
+.has-icon {
+    vertical-align: middle;
+    i {
+        vertical-align: middle;
+        padding: 3px;
+        line-height: 1rem;
+    }
+}
+
+.social-btns {
+    padding: 5%;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.15);
+    .btn {
+        border-radius: 0;
+        margin: 6px;
+    }
+}
+
+.btn-facebook {
+    background-color: #3b5998;
+    &:hover {
+        background-color: #4971c3;
+        color: $color-ffffff;
+    }
+}
+
+.btn-twitter {
+    background-color: #1ea1f3;
+    &:hover {
+        background-color: #3eb1f9;
+        color: $color-ffffff;
+    }
+}
+
+.jumbo-form-holder {
+    text-align: left;
+    color: #fff;
+    padding: 5%;
+
+    a {
+        color: #009cc6;
+    }
+    .wrap-item_text {
+        @include font-size(14px);
+    }
+    .form-control {
+        box-shadow: none;
+        padding: 12px 20px;
+        height: 42px;
+    }
+    .submit-btn {
+        min-width: 50%;
+    }
+    @include bp-max-666 {
+        .custom-control {
+            float: none !important;
+        }
+        .forgot-pass {
+            margin: 10px 0 5px;
+            float: none !important;
+            display: block;
+            text-align: center;
+        }
+    }
+}
+
+.custom-control {
+    position: relative;
+    display: block;
+    padding-left: 1.5rem;
+}
+
+.custom-control-input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+    &:checked ~ .custom-control-label::after {
+        background-color: #009cc6;
+    }
+}
+
+.custom-control-label {
+    margin-bottom: 0;
+    cursor: pointer;
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 1rem;
+        height: 1rem;
+        pointer-events: none;
+        content: "";
+        background-color: #fff;
+        border-radius: 50%;
+    }
+    &:after {
+        position: absolute;
+        top: .20rem;
+        left: .20rem;
+        display: block;
+        width: 0.6rem;
+        height: 0.6rem;
+        content: "";
+        border-radius: 50%;
+    }
+}
+
+.h3-text {
+    color: #fff;
+    @include font-size(24px);
+    margin-bottom: 20px;
+}

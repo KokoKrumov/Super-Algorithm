@@ -1,0 +1,137 @@
+.btn {
+  padding: 10px 20px;
+  font-family: "robotobold", sans-serif;
+  @include font-size(14px);
+  text-transform: uppercase;
+  color: $color-ffffff;
+  border-radius: 30px;
+  overflow: hidden;
+  border-width: 2px;
+  line-height: 1;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.navbar-nav .btn-default {
+  background-color: transparent;
+  border-color: $color-ffffff;
+  color: $color-ffffff;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $color-012f61;
+    color: $color-012f61;
+  }
+}
+
+.btn-primary-default {
+  background-color: $color-ffffff;
+  border-color: $color-ffffff;
+  color: $color-primary;
+
+  &:hover {
+    background-color: $color-012f61;
+    border-color: $color-012f61;
+    color: $color-009cc6;
+  }
+}
+
+.header_page {
+  .btn-primary-default {
+    &:hover {
+      background-color: $color-warning;
+      border-color: $color-warning;
+      color: $color-ffffff;
+    }
+  }
+
+  .btn-default {
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: $color-warning;
+      color: $color-warning;
+      background-color: transparent;
+    }
+  }
+  .btn-transparent {
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color-warning;
+    }
+  }
+}
+
+
+.btn-primary {
+  background-color: $color-primary;
+  border-color: $color-primary;
+  color: $color-ffffff;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $color-012f61;
+    border-color: $color-012f61;
+  }
+}
+
+.btn-warning {
+  background-color: $color-warning;
+  border-color: $color-warning;
+  color: $color-ffffff;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: transparent;
+    color: $color-warning;
+  }
+}
+
+.btn-bordered {
+  background-color: transparent;
+  border-color: $color-primary;
+  color: $color-primary;
+  padding: 15px 30px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-ffffff;
+    background-color: $color-primary;
+  }
+}
+
+.navbar-nav .btn-default.hvr-bounce-to-right {
+  &:before {
+    background: $color-ffffff;
+  }
+  :hover {
+    color: $color-primary;
+  }
+}
+
+.btn-default {
+  border-color: #c7d1d6;
+  color: #c7d1d6;
+}
+
+.btn-success {
+  background-color: $color-success;
+  border-color: $color-success;
+  color: $color-ffffff;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $color-ffffff;
+    color: $color-success;
+    border-color: $color-success;
+  }
+}

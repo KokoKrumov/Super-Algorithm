@@ -1,0 +1,70 @@
+.form-options {
+  @extend .flex;
+  @extend .justify-content-around;
+  @extend .flex-wrap;
+
+  @include bp-max-666 {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+    flex: 1 1 auto;
+  }
+}
+
+.radio-item {
+  position: relative;
+  width: 100%;
+
+}
+
+input[type="radio"].radio-style, input[type="checkbox"].radio-style {
+  margin-left: 2px;
+}
+
+input[type="radio"]:focus {
+  outline: none;
+  outline-offset: 0;
+}
+
+.radio-option {
+  margin-left: 15px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.radio-option::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: $color-ffffff;
+  border: 1px solid #bec2cd;
+  border-radius: 25px;
+}
+
+.radio-option::after {
+  content: " ";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background: $color-009cc6;
+  border-radius: 14px;
+  opacity: 0;
+}
+
+.radio-item input:checked ~ .radio-option {
+  color: $color-009cc6;
+
+  &::after {
+    opacity: 1;
+  }
+}
+

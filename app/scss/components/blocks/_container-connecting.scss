@@ -1,0 +1,44 @@
+.container-connecting {
+  .heading,
+  .text {
+    color: $color-ffffff;
+  }
+
+  .text {
+    text-transform: uppercase;
+  }
+
+  @include bp-max-767 {
+    .wrap-tab-img {
+      text-align: center;
+      padding: 0 20px;
+    }
+  }
+}
+
+@include bp-max-767 {
+  .wrap-container-connecting {
+    flex-direction: column;
+  }
+}
+
+.under-connecting--style {
+  @extend .bg-color-ff;
+  padding-top: 80px;
+  @include bp-min-768 {
+    padding-top: 100px;
+  }
+}
+
+.tab-pane .heading {
+  text-transform: capitalize;
+}
+
+.img-connecting {
+  position: relative;
+  bottom: 30px;
+  @include bp-min-768 {
+    position: absolute;
+    bottom: -30px;
+  }
+}

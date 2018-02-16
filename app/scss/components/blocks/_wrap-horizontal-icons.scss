@@ -1,0 +1,37 @@
+.wrap-horizontal-icons {
+  @extend .flex;
+  @extend .align-items-center;
+  @extend .justify-content-between;
+  @extend .flex-wrap;
+
+  @include bp-max-1199 {
+    margin: 30px;
+  }
+
+  @include bp-max-991 {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .wrap-text {
+    @include bp-max-1199 {
+      margin-bottom: 30px;
+    }
+
+    .text {
+      text-transform: uppercase;
+      padding-top: 10px;
+    }
+  }
+
+  .wrap-icons {
+    @extend .flex;
+    @extend .justify-content-between;
+
+    @include bp-max-1199 {
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}

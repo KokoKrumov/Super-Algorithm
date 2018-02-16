@@ -1,0 +1,125 @@
+.container-work_box {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include bp-max-991 {
+    display: inline-block;
+  }
+}
+.work-list {
+  @include bp-max-991 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+}
+.work-wrap_text {
+  text-align: left;
+  @extend .col-clear;
+  @include bp-max-666 {
+    min-height: 145px;
+    /*align-items: center;*/
+  }
+  @include bp-max-991 {
+    text-align: center;
+  }
+}
+.step-item {
+  @include bp-max-991 {
+    margin-bottom: 60px;
+  }
+}
+.work-title-spr {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 38px;
+  width: 100%;
+  .title-number {
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    @include font-size(20px);
+    background-color: $color-cdd6e0;
+    color: $color-ffffff;
+    @include bp-max-991 {
+      height: 36px;
+    }
+  }
+  .title-line {
+    height: 1px;
+    max-width: 295px;
+    width: 100%;
+    background-color: $color-cdd6e0;
+    @include bp-max-666 {
+      max-width: 100%;
+    }
+  }
+}
+.work-title {
+  @include font-size(26px);
+  color: $color-012f61;
+  padding: 10px 0;
+  margin-bottom: -20px;
+  margin-left: 50px;
+  text-align: left;
+  @include bp-max-991 {
+    text-align: center;
+  }
+  @include bp-max-767 {
+    @include font-size(22px);
+  }
+  @include bp-max-666 {
+    margin-bottom: -15px;
+    margin-left: 38px;
+    margin-right: 38px;
+  }
+}
+.work-text {
+  @extend .text;
+  @include font-size(14px);
+  line-height: 1.7;
+  margin-left: 50px;
+  @include bp-max-666 {
+    text-align: center;
+    margin-left: 38px;
+    margin-right: 38px;
+
+  }
+}
+.work-wrap_icon {
+  height: 100%;
+  min-height: 245px;
+  text-align: center;
+  @extend .col-clear;
+  @include bp-max-991 {
+    min-height: 145px;
+  }
+}
+
+/* Icons */
+.icon-work-info-svg {
+  @extend .icon-svg;
+  width: 100%;
+  height: 100%;
+  @include bp-max-991 {
+    width: 150px;
+    height: 150px;
+  }
+}
+.icon-work-feature-svg {
+  @extend .icon-svg;
+  width: 197px;
+  height: 110px;
+}
+
+/* Custom column (width: 100%)-> @media query(max-width -> 666px) */
+.col-xxs-12 {
+  @include bp-max-666 {
+    width: 100% !important;
+  }
+}

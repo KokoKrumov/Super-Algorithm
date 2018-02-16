@@ -1,0 +1,10 @@
+.dots {
+ span {
+   display: inline-block;
+   width: 7px;
+   height: 7px;
+   margin: 2px;
+   background: $color-primary;
+   border-radius: 50%;
+ }
+}

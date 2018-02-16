@@ -1,0 +1,6 @@
+.text {
+  font-family: 'robotolight';
+  @include font-size(16px);
+  color: $color-title;
+  line-height: 1.4;
+}

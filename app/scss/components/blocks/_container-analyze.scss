@@ -1,0 +1,11 @@
+.container-analyze {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  &_title {
+    max-width: 630px;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+  }
+}

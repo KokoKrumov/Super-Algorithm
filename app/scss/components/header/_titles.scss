@@ -1,0 +1,24 @@
+.heading {
+  color: $color-title;
+  font-family: "robotobold", sans-serif;
+  @include font-size(28px);
+  @include bp-min-768 {
+    font-size: calc(28px + (38 - 28) * (100vw - 768px) / (1920 - 768));
+  }
+
+  &.white {
+    color: $color-ffffff;
+  }
+
+  &.heading--md {
+    @include font-size(22px);
+    @include bp-min-768 {
+      font-size: calc(26px + (26 - 22) * (100vw - 768px) / (1920 - 768));
+    }
+  }
+
+  &.heading--sm {
+    @include font-size(18px);
+    text-transform: uppercase;
+  }
+}

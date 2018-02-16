@@ -1,0 +1,116 @@
+.wrap-header {
+  position: relative;
+  background-image: url("/app/images/jumbotron-images/SA_home-jumbotron.png"),
+  url("/app/images/jumbotron-images/SA_home-jumbotron_part2.png");
+  height: 665px;
+  background-size: 809px, cover;
+  background-position: center top, top;
+  background-attachment: fixed, scroll;
+  background-repeat: no-repeat;
+
+
+  @include bp-min-768 {
+    background-position: left top, top;
+  }
+
+  @include bp-medium {
+    height: auto;
+    background-size: contain, cover;
+  }
+
+  .wrap-header-content {
+    padding-top: 260px;
+    padding-bottom: 250px;
+
+    @include bp-max-991 {
+      padding-top: 80px;
+      padding-bottom: 150px;
+    }
+  }
+
+  &-content {
+    padding-top: 110px;
+    padding-bottom: 185px;
+  }
+
+}
+
+.jumbotron {
+  text-align: center;
+
+  @include bp-max-767 {
+    width: 100%;
+  }
+
+  &__title,
+  &__title-sub {
+    text-shadow: 0 2px 0 rgba(0,0,0,0.20);
+  }
+}
+
+.jumbotron__title {
+  @include font-size(40px);
+  font-family: "robotobold", sans-serif;
+  color: $color-ffffff;
+  padding: 0 30px;
+  margin-bottom: 20px;
+  @include bp-min-768 {
+    font-size: calc(40px + (54 - 40) * (100vw - 768px) / (1920 - 768));
+  }
+
+  &_inner-page {
+    @include font-size(30px);
+    @include bp-min-768 {
+      font-size: calc(30px + (44 - 30) * (100vw - 768px) / (1920 - 768));
+    }
+  }
+}
+
+.jumbotron__title-sub {
+  @include font-size(18px);
+  font-family: "robotolight", sans-serif;
+  color: $color-ffffff;
+  padding: 0 30px;
+  margin-bottom: 40px;
+  @include bp-min-768 {
+    font-size: calc(18px + (22 - 18) * (100vw - 768px) / (1920 - 768));
+  }
+}
+
+.jumbotron_wrap-btn {
+  margin-bottom: 15px;
+}
+
+.jumbotron_wrap-icon {
+  .imoon {
+    color: $color-warning;
+  }
+  .link {
+    padding: 10px;
+    &:hover .icon-label {
+      color: $color-warning;
+    }
+  }
+
+  .icon-label {
+    @include font-size(14px);
+    text-transform: uppercase;
+    margin-left: 10px;
+    color: $color-ffffff;
+
+  }
+}
+
+.aos-item {
+  padding: 50px;
+  background: #00b3ee;
+  display: inline-block;
+  margin: 20px;
+}
+
+.inner-page-bg {
+  .jumbotron__title-sub {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+}

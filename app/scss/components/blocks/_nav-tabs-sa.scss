@@ -1,0 +1,136 @@
+.wrap-tabs {
+  @extend .margin-center;
+}
+
+.tab-content-sa {
+  .tab-pane div:first-child {
+    @include bp-min-768 {
+      padding-right: 50px;
+    }
+  }
+}
+
+.tab-content>.active {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-tabs-list {
+  max-width: 750px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  @extend .margin-center;
+  margin-bottom: 50px;
+  .btn {
+    color: $color-title;
+  }
+
+  .active>.btn,
+  .btn:hover,
+  .btn:active,
+  .btn:focus {
+    color: $color-warning;
+  }
+}
+
+.nav-tabs-list > li {
+  float: none;
+  flex: 1 1 33.333333%;
+  width: auto;
+}
+
+.nav-tabs-list > li.active > a,
+.nav-tabs-list > li.active > a:hover,
+.nav-tabs-list > li.active > a:focus,
+.nav-tabs-list > li > a,
+.nav-tabs-list > li > a:hover,
+.nav-tabs-list > li > a:focus {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.nav-tabs-list > li.active > a,
+.nav-tabs-list > li.active > a:hover,
+.nav-tabs-list > li.active > a:focus {
+
+  color: $color-warning;
+  background-color: transparent;
+  border-bottom-color: $color-warning;
+  border-bottom: 2px solid $color-warning;
+}
+
+.nav-tabs-list .active>.btn, .btn:active, .btn.active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  position: relative;
+}
+
+.nav-tabs.nav-tabs-list {
+  border-bottom: none;
+}
+
+.nav-tabs-list {
+  .active .btn {
+    border-bottom: 2px solid $color-warning;
+    border-bottom-color: $color-warning;
+  }
+
+  .btn {
+    border-bottom: 2px solid #ddd;
+    margin: 0;
+  }
+}
+
+.nav-tabs-list>.active {
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    border-left: 19px solid transparent;
+    border-right: 19px solid transparent;
+    border-top: 12px solid $color-warning;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    border-left: 19px solid transparent;
+    border-right: 19px solid transparent;
+    border-top: 12px solid $color-ffffff;
+  }
+}
+
+.dropdown.nav-tabs-list_item {
+  flex: 0 0 200px;
+  width: 200px;
+  @extend .margin-center;
+}
+
+.nav-tabs-list_item_dropdown {
+  width: 100%;
+  max-width: 100%;
+  top: 150%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+  .btn {
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+  }
+}
+
+.active .nav-tabs-list_item_dropdown .btn {
+  border-bottom: 1px solid gray;
+  border-bottom-color: gray;
+  border-radius: 0;
+}

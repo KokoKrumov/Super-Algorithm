@@ -1,0 +1,36 @@
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/* Box model
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+}
+
+*:before, *:after {
+    box-sizing: border-box;
+}
+
+
+/* Html & body
+   ========================================================================== */
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    height: 100%;
+}
+
+//with flex property on body and main, the footer is always on bottom
+
+body {
+    background-color: $white;
+    display: flex;
+    min-height: 100vh;
+    height: 100vh;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+main {
+    flex: 1 0 auto;
+}

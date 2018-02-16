@@ -1,0 +1,23 @@
+.wrap_title-text-btn {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .heading,
+  .heading--md {
+    margin-bottom: 25px;
+  }
+
+  .btn {
+    margin-top: 25px;
+  }
+
+  &__inner {
+    max-width: 285px;
+    width: 100%;
+    @extend .margin-center;
+
+    @include bp-max-767 {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.wrap-header-icon {
+  position: absolute;
+  bottom: -62px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.header-icon {
+  padding: 34px 24px;
+  background-color: #324a5e;
+  border-radius: 50%;
+}
+
+.header-icon_icon {
+  font-size: 60px;
+  color: white;
+}
